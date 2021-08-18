@@ -18,9 +18,9 @@ const HomePage: React.FC = () => {
       <IntroContainer>
         <TextTop>SOFTWARE ENGINEER</TextTop>
         <Name>
-          Usama
+          USAMA
           <br />
-          Bilal
+          BILAL
         </Name>
         <Introduction>
           Passionate application developer currently working as a <br /> React
