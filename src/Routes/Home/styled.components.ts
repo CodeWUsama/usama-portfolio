@@ -12,11 +12,13 @@ export const MainContainer = styled.div`
 
 export const IntroContainer = styled.div`
   background-color: #045de9;
-  padding: 10px;
   background-image: linear-gradient(315deg, #045de9 0%, #00ccff 74%);
   width: 65%;
   display: flex;
   flex-direction: column;
+  p{
+    padding:0 10px;
+  }
   @media (max-width: 630px) {
     width: 100%;
     height: 100vh;
@@ -58,6 +60,9 @@ export const Name = styled.p`
   letter-spacing: 10px;
   @media (max-width: 768px) {
     font-size: 70px;
+  }
+  @media (max-width: 330px) {
+    font-size: 50px;
   }
 `;
 export const Introduction = styled.p`
