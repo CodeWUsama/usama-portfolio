@@ -88,6 +88,15 @@ export const ImageContainer = styled.div`
     width: 330px;
     height: 325px;
     border-radius: 50%;
+    animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @media (max-width: 1000px) {
     height: 230px;
@@ -103,6 +112,13 @@ export const ImageContainer = styled.div`
     }
   }
   @media (max-width: 630px) {
+    img {
+      width: 230px;
+      height: 200px;
+    }
+  }
+  @media (max-height: 750px) {
+    height: 250px;
     img {
       width: 230px;
       height: 200px;
@@ -158,7 +174,7 @@ export const ArrowWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   height: 50px;
-  img{
+  img {
     width: 30px;
     height: 30px;
   }

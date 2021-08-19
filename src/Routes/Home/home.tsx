@@ -13,14 +13,17 @@ import {
   IntroWrapper,
   ArrowWrapper,
 } from "./styled.components";
+import { useHistory } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
+import Typist from "react-typist";
 
 const HomePage: React.FC = () => {
   const [hoveredAction, setHoveredAction] = useState<string>("");
+  const History = useHistory();
 
   return (
     <MainContainer>
-      <ReactTooltip place="top" effect="solid" type="warning" />
+      <ReactTooltip place="top" effect="solid" type="info" />
       <IntroContainer>
         <IntroWrapper>
           <TextTop>SOFTWARE ENGINEER</TextTop>
@@ -29,10 +32,12 @@ const HomePage: React.FC = () => {
             <br />
             BILAL
           </Name>
-          <Introduction>
-            Passionate application developer currently working as a <br /> React
-            Developer in Embrace-IT Pakistan
-          </Introduction>
+          <Typist cursor={{ show: false }}>
+            <Introduction>
+              Passionate application developer currently working as a <br />{" "}
+              React Developer in Embrace-IT Pakistan
+            </Introduction>
+          </Typist>
         </IntroWrapper>
       </IntroContainer>
       <OptionsContainer>
@@ -41,6 +46,7 @@ const HomePage: React.FC = () => {
         </ImageContainer>
         <ActionsContainer>
           <Action
+            onClick={() => History.push("/expertise")}
             data-tip="Go to Skills page"
             onMouseEnter={() => setHoveredAction("skills")}
             onMouseLeave={() => setHoveredAction("")}
@@ -57,7 +63,7 @@ const HomePage: React.FC = () => {
               src={process.env.PUBLIC_URL + "/Icons/skills.png"}
               alt="Skills Icon"
             />
-            <ActionLabel>Skills</ActionLabel>
+            <ActionLabel>Expertise</ActionLabel>
           </Action>
           <Action
             data-tip="Go to Projects page"
