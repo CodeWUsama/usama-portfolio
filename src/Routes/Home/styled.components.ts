@@ -16,8 +16,8 @@ export const IntroContainer = styled.div`
   width: 65%;
   display: flex;
   flex-direction: column;
-  p{
-    padding:0 10px;
+  p {
+    padding: 0 10px;
   }
   @media (max-width: 630px) {
     width: 100%;
@@ -135,7 +135,7 @@ export const Action = styled.div`
   }
   @media (max-width: 1000px) {
     flex-basis: 100%;
-    height: 128px;
+    height: 160px;
   }
 `;
 
@@ -151,4 +151,15 @@ export const IntroWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+`;
+
+export const ArrowWrapper = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  img{
+    width: 30px;
+    height: 30px;
+  }
 `;
