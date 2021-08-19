@@ -10,29 +10,29 @@ import {
   ActionsContainer,
   Action,
   ActionLabel,
+  IntroWrapper,
 } from "./styled.components";
 
 const HomePage: React.FC = () => {
   return (
     <MainContainer>
       <IntroContainer>
-        <TextTop>SOFTWARE ENGINEER</TextTop>
-        <Name>
-          USAMA
-          <br />
-          BILAL
-        </Name>
-        <Introduction>
-          Passionate application developer currently working as a <br /> React
-          Developer in Embrace-IT Pakistan
-        </Introduction>
+        <IntroWrapper>
+          <TextTop>SOFTWARE ENGINEER</TextTop>
+          <Name>
+            USAMA
+            <br />
+            BILAL
+          </Name>
+          <Introduction>
+            Passionate application developer currently working as a <br /> React
+            Developer in Embrace-IT Pakistan
+          </Introduction>
+        </IntroWrapper>
       </IntroContainer>
       <OptionsContainer>
         <ImageContainer>
-          <img
-            src={process.env.PUBLIC_URL + "/Images/usama.png"}
-            alt="Usama Picture"
-          />
+          <img src={process.env.PUBLIC_URL + "/Images/usama.png"} alt="Usama" />
         </ImageContainer>
         <ActionsContainer>
           <Action>
