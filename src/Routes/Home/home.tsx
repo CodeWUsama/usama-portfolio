@@ -16,6 +16,7 @@ import {
 import { useHistory } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import Typist from "react-typist";
+import Button from "../../Components/Button/button";
 
 const HomePage: React.FC = () => {
   const [hoveredAction, setHoveredAction] = useState<string>("");
@@ -38,6 +39,13 @@ const HomePage: React.FC = () => {
               React Developer in Embrace-IT Pakistan
             </Introduction>
           </Typist>
+          <Button
+            text="View Usama's Resume"
+            marginTop={30}
+            onClick={() => {
+              window.open("/Documents/Usama-bilal-resume.pdf", "_blank");
+            }}
+          />
         </IntroWrapper>
       </IntroContainer>
       <OptionsContainer>

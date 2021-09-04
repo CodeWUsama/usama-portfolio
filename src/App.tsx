@@ -1,4 +1,3 @@
-import "./App.css";
 import HomePage from "./Routes/Home/home";
 import Skills from "./Routes/Skills/skills";
 import { Route, BrowserRouter } from "react-router-dom";
